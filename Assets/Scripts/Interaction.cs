@@ -11,7 +11,6 @@ public class Interaction : MonoBehaviour
         if (Physics.Raycast(ray, out RaycastHit hit)) {
             if (hit.collider.TryGetComponent(out Clickable clickable)) {
                 if (Input.GetMouseButtonDown(0)) {
-                    Debug.Log("!");
                     clickable.Hit();
                 }
             }
